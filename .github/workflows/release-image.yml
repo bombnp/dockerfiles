@@ -35,5 +35,5 @@ jobs:
           push: true
           context: .
           file: dockerfiles/${{ inputs.image }}.Dockerfile
-          tags: ${{ inputs.image }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ inputs.image }}
           platforms: linux/amd64,linux/arm64
