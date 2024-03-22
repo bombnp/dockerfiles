@@ -15,8 +15,8 @@ jobs:
 
       - name: Check Dockerfile exists
         run: |
-          if [ ! -f dockerfiles/${{ inputs.image }} ]; then
-            echo "${{ inputs.image }} not found in dockerfiles/"
+          if [ ! -f dockerfiles/${{ inputs.image }}.Dockerfile ]; then
+            echo "${{ inputs.image }}.Dockerfile not found in dockerfiles/"
             exit 1
           fi
 
