@@ -34,6 +34,6 @@ jobs:
         with:
           push: true
           context: .
-          file: dockerfiles/${{ inputs.image }}
+          file: dockerfiles/${{ inputs.image }}.Dockerfile
           tags: ${{ inputs.image }}
           platforms: linux/amd64,linux/arm64
